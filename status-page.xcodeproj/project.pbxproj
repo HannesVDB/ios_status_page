@@ -3,18 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1BCF483C22C3707000DF07F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF483B22C3707000DF07F2 /* AppDelegate.swift */; };
 		1BCF483E22C3707000DF07F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF483D22C3707000DF07F2 /* SceneDelegate.swift */; };
-		1BCF484022C3707000DF07F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF483F22C3707000DF07F2 /* ContentView.swift */; };
 		1BCF484222C3707200DF07F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF484122C3707200DF07F2 /* Assets.xcassets */; };
 		1BCF484522C3707200DF07F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF484422C3707200DF07F2 /* Preview Assets.xcassets */; };
 		1BCF484822C3707200DF07F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF484622C3707200DF07F2 /* LaunchScreen.storyboard */; };
 		1BCF485322C3707200DF07F2 /* status_pageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF485222C3707200DF07F2 /* status_pageTests.swift */; };
 		1BCF485E22C3707200DF07F2 /* status_pageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF485D22C3707200DF07F2 /* status_pageUITests.swift */; };
+		1BCF489B22C3711500DF07F2 /* CareTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF486E22C3711500DF07F2 /* CareTicket.swift */; };
+		1BCF489C22C3711500DF07F2 /* CareAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF486F22C3711500DF07F2 /* CareAgent.swift */; };
+		1BCF489D22C3711500DF07F2 /* BambooBirthdayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487122C3711500DF07F2 /* BambooBirthdayResponse.swift */; };
+		1BCF489E22C3711500DF07F2 /* BambooResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487222C3711500DF07F2 /* BambooResponse.swift */; };
+		1BCF489F22C3711500DF07F2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487422C3711500DF07F2 /* Profile.swift */; };
+		1BCF48A022C3711500DF07F2 /* VeloItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487622C3711500DF07F2 /* VeloItem.swift */; };
+		1BCF48A122C3711500DF07F2 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487722C3711500DF07F2 /* Status.swift */; };
+		1BCF48A222C3711500DF07F2 /* JenkinsBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487922C3711500DF07F2 /* JenkinsBuild.swift */; };
+		1BCF48A322C3711500DF07F2 /* EventsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487B22C3711500DF07F2 /* EventsResponse.swift */; };
+		1BCF48A422C3711500DF07F2 /* CareAgentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487E22C3711500DF07F2 /* CareAgentRequest.swift */; };
+		1BCF48A522C3711500DF07F2 /* CareRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF487F22C3711500DF07F2 /* CareRequest.swift */; };
+		1BCF48A622C3711500DF07F2 /* StatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488122C3711500DF07F2 /* StatusRequest.swift */; };
+		1BCF48A722C3711500DF07F2 /* AnniversaryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488322C3711500DF07F2 /* AnniversaryRequest.swift */; };
+		1BCF48A822C3711500DF07F2 /* BirthdayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488422C3711500DF07F2 /* BirthdayRequest.swift */; };
+		1BCF48A922C3711500DF07F2 /* LatestHireRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488522C3711500DF07F2 /* LatestHireRequest.swift */; };
+		1BCF48AA22C3711500DF07F2 /* VeloRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488722C3711500DF07F2 /* VeloRequest.swift */; };
+		1BCF48AB22C3711500DF07F2 /* JenkinsBuildsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488922C3711500DF07F2 /* JenkinsBuildsRequest.swift */; };
+		1BCF48AC22C3711500DF07F2 /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488B22C3711500DF07F2 /* EventsRequest.swift */; };
+		1BCF48AD22C3711500DF07F2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488D22C3711500DF07F2 /* Service.swift */; };
+		1BCF48B022C3711500DF07F2 /* SocketConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489322C3711500DF07F2 /* SocketConfiguration.swift */; };
+		1BCF48B122C3711500DF07F2 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489422C3711500DF07F2 /* Status.swift */; };
+		1BCF48B222C3711500DF07F2 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489522C3711500DF07F2 /* Socket.swift */; };
+		1BCF48B322C3711500DF07F2 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489722C3711500DF07F2 /* SSLClientCertificate.swift */; };
+		1BCF48B422C3711500DF07F2 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489822C3711500DF07F2 /* Compression.swift */; };
+		1BCF48B522C3711500DF07F2 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489922C3711500DF07F2 /* SSLSecurity.swift */; };
+		1BCF48B622C3711500DF07F2 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489A22C3711500DF07F2 /* WebSocket.swift */; };
+		1BCF48BA22C371A400DF07F2 /* Cara in Frameworks */ = {isa = PBXBuildFile; productRef = 1BCF48B922C371A400DF07F2 /* Cara */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +64,6 @@
 		1BCF483822C3707000DF07F2 /* status-page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "status-page.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCF483B22C3707000DF07F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BCF483D22C3707000DF07F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BCF483F22C3707000DF07F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BCF484122C3707200DF07F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BCF484422C3707200DF07F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BCF484722C3707200DF07F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +74,32 @@
 		1BCF485922C3707200DF07F2 /* status-pageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "status-pageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCF485D22C3707200DF07F2 /* status_pageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status_pageUITests.swift; sourceTree = "<group>"; };
 		1BCF485F22C3707200DF07F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCF486E22C3711500DF07F2 /* CareTicket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareTicket.swift; sourceTree = "<group>"; };
+		1BCF486F22C3711500DF07F2 /* CareAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareAgent.swift; sourceTree = "<group>"; };
+		1BCF487122C3711500DF07F2 /* BambooBirthdayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BambooBirthdayResponse.swift; sourceTree = "<group>"; };
+		1BCF487222C3711500DF07F2 /* BambooResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BambooResponse.swift; sourceTree = "<group>"; };
+		1BCF487422C3711500DF07F2 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1BCF487622C3711500DF07F2 /* VeloItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeloItem.swift; sourceTree = "<group>"; };
+		1BCF487722C3711500DF07F2 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		1BCF487922C3711500DF07F2 /* JenkinsBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JenkinsBuild.swift; sourceTree = "<group>"; };
+		1BCF487B22C3711500DF07F2 /* EventsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsResponse.swift; sourceTree = "<group>"; };
+		1BCF487E22C3711500DF07F2 /* CareAgentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareAgentRequest.swift; sourceTree = "<group>"; };
+		1BCF487F22C3711500DF07F2 /* CareRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareRequest.swift; sourceTree = "<group>"; };
+		1BCF488122C3711500DF07F2 /* StatusRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusRequest.swift; sourceTree = "<group>"; };
+		1BCF488322C3711500DF07F2 /* AnniversaryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnniversaryRequest.swift; sourceTree = "<group>"; };
+		1BCF488422C3711500DF07F2 /* BirthdayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayRequest.swift; sourceTree = "<group>"; };
+		1BCF488522C3711500DF07F2 /* LatestHireRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestHireRequest.swift; sourceTree = "<group>"; };
+		1BCF488722C3711500DF07F2 /* VeloRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeloRequest.swift; sourceTree = "<group>"; };
+		1BCF488922C3711500DF07F2 /* JenkinsBuildsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JenkinsBuildsRequest.swift; sourceTree = "<group>"; };
+		1BCF488B22C3711500DF07F2 /* EventsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRequest.swift; sourceTree = "<group>"; };
+		1BCF488D22C3711500DF07F2 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1BCF489322C3711500DF07F2 /* SocketConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConfiguration.swift; sourceTree = "<group>"; };
+		1BCF489422C3711500DF07F2 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		1BCF489522C3711500DF07F2 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		1BCF489722C3711500DF07F2 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLClientCertificate.swift; sourceTree = "<group>"; };
+		1BCF489822C3711500DF07F2 /* Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
+		1BCF489922C3711500DF07F2 /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		1BCF489A22C3711500DF07F2 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCF48BA22C371A400DF07F2 /* Cara in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +151,8 @@
 		1BCF483A22C3707000DF07F2 /* status-page */ = {
 			isa = PBXGroup;
 			children = (
-				1BCF483B22C3707000DF07F2 /* AppDelegate.swift */,
-				1BCF483D22C3707000DF07F2 /* SceneDelegate.swift */,
-				1BCF483F22C3707000DF07F2 /* ContentView.swift */,
+				1BCF48B722C3715100DF07F2 /* Startup */,
+				1BCF486B22C3707D00DF07F2 /* Service */,
 				1BCF484122C3707200DF07F2 /* Assets.xcassets */,
 				1BCF484622C3707200DF07F2 /* LaunchScreen.storyboard */,
 				1BCF484922C3707200DF07F2 /* Info.plist */,
@@ -136,6 +187,184 @@
 			path = "status-pageUITests";
 			sourceTree = "<group>";
 		};
+		1BCF486B22C3707D00DF07F2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF486C22C3711500DF07F2 /* Models */,
+				1BCF487C22C3711500DF07F2 /* Requests */,
+				1BCF488C22C3711500DF07F2 /* Service */,
+				1BCF489222C3711500DF07F2 /* Socket */,
+				1BCF489622C3711500DF07F2 /* Vendor */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1BCF486C22C3711500DF07F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF486D22C3711500DF07F2 /* Care */,
+				1BCF487022C3711500DF07F2 /* Bamboo */,
+				1BCF487322C3711500DF07F2 /* Profile */,
+				1BCF487522C3711500DF07F2 /* Velo */,
+				1BCF487722C3711500DF07F2 /* Status.swift */,
+				1BCF487822C3711500DF07F2 /* Jenkins */,
+				1BCF487A22C3711500DF07F2 /* Events */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1BCF486D22C3711500DF07F2 /* Care */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF486E22C3711500DF07F2 /* CareTicket.swift */,
+				1BCF486F22C3711500DF07F2 /* CareAgent.swift */,
+			);
+			path = Care;
+			sourceTree = "<group>";
+		};
+		1BCF487022C3711500DF07F2 /* Bamboo */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF487122C3711500DF07F2 /* BambooBirthdayResponse.swift */,
+				1BCF487222C3711500DF07F2 /* BambooResponse.swift */,
+			);
+			path = Bamboo;
+			sourceTree = "<group>";
+		};
+		1BCF487322C3711500DF07F2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF487422C3711500DF07F2 /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1BCF487522C3711500DF07F2 /* Velo */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF487622C3711500DF07F2 /* VeloItem.swift */,
+			);
+			path = Velo;
+			sourceTree = "<group>";
+		};
+		1BCF487822C3711500DF07F2 /* Jenkins */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF487922C3711500DF07F2 /* JenkinsBuild.swift */,
+			);
+			path = Jenkins;
+			sourceTree = "<group>";
+		};
+		1BCF487A22C3711500DF07F2 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF487B22C3711500DF07F2 /* EventsResponse.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		1BCF487C22C3711500DF07F2 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF487D22C3711500DF07F2 /* Care */,
+				1BCF488022C3711500DF07F2 /* Status */,
+				1BCF488222C3711500DF07F2 /* Bamboo */,
+				1BCF488622C3711500DF07F2 /* Velo */,
+				1BCF488822C3711500DF07F2 /* Jenkins */,
+				1BCF488A22C3711500DF07F2 /* Events */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		1BCF487D22C3711500DF07F2 /* Care */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF487E22C3711500DF07F2 /* CareAgentRequest.swift */,
+				1BCF487F22C3711500DF07F2 /* CareRequest.swift */,
+			);
+			path = Care;
+			sourceTree = "<group>";
+		};
+		1BCF488022C3711500DF07F2 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF488122C3711500DF07F2 /* StatusRequest.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		1BCF488222C3711500DF07F2 /* Bamboo */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF488322C3711500DF07F2 /* AnniversaryRequest.swift */,
+				1BCF488422C3711500DF07F2 /* BirthdayRequest.swift */,
+				1BCF488522C3711500DF07F2 /* LatestHireRequest.swift */,
+			);
+			path = Bamboo;
+			sourceTree = "<group>";
+		};
+		1BCF488622C3711500DF07F2 /* Velo */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF488722C3711500DF07F2 /* VeloRequest.swift */,
+			);
+			path = Velo;
+			sourceTree = "<group>";
+		};
+		1BCF488822C3711500DF07F2 /* Jenkins */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF488922C3711500DF07F2 /* JenkinsBuildsRequest.swift */,
+			);
+			path = Jenkins;
+			sourceTree = "<group>";
+		};
+		1BCF488A22C3711500DF07F2 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF488B22C3711500DF07F2 /* EventsRequest.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		1BCF488C22C3711500DF07F2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF488D22C3711500DF07F2 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1BCF489222C3711500DF07F2 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF489322C3711500DF07F2 /* SocketConfiguration.swift */,
+				1BCF489422C3711500DF07F2 /* Status.swift */,
+				1BCF489522C3711500DF07F2 /* Socket.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		1BCF489622C3711500DF07F2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF489722C3711500DF07F2 /* SSLClientCertificate.swift */,
+				1BCF489822C3711500DF07F2 /* Compression.swift */,
+				1BCF489922C3711500DF07F2 /* SSLSecurity.swift */,
+				1BCF489A22C3711500DF07F2 /* WebSocket.swift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		1BCF48B722C3715100DF07F2 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF483B22C3707000DF07F2 /* AppDelegate.swift */,
+				1BCF483D22C3707000DF07F2 /* SceneDelegate.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +381,9 @@
 			dependencies = (
 			);
 			name = "status-page";
+			packageProductDependencies = (
+				1BCF48B922C371A400DF07F2 /* Cara */,
+			);
 			productName = "status-page";
 			productReference = 1BCF483822C3707000DF07F2 /* status-page.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +456,9 @@
 				Base,
 			);
 			mainGroup = 1BCF482F22C3707000DF07F2;
+			packageReferences = (
+				1BCF48B822C371A400DF07F2 /* XCRemoteSwiftPackageReference "ios-cara" */,
+			);
 			productRefGroup = 1BCF483922C3707000DF07F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +502,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCF489E22C3711500DF07F2 /* BambooResponse.swift in Sources */,
+				1BCF48B022C3711500DF07F2 /* SocketConfiguration.swift in Sources */,
+				1BCF48A422C3711500DF07F2 /* CareAgentRequest.swift in Sources */,
+				1BCF48A122C3711500DF07F2 /* Status.swift in Sources */,
+				1BCF48B222C3711500DF07F2 /* Socket.swift in Sources */,
+				1BCF48B422C3711500DF07F2 /* Compression.swift in Sources */,
+				1BCF48A222C3711500DF07F2 /* JenkinsBuild.swift in Sources */,
+				1BCF48A522C3711500DF07F2 /* CareRequest.swift in Sources */,
+				1BCF48A322C3711500DF07F2 /* EventsResponse.swift in Sources */,
+				1BCF489F22C3711500DF07F2 /* Profile.swift in Sources */,
+				1BCF48B122C3711500DF07F2 /* Status.swift in Sources */,
 				1BCF483C22C3707000DF07F2 /* AppDelegate.swift in Sources */,
+				1BCF48A622C3711500DF07F2 /* StatusRequest.swift in Sources */,
 				1BCF483E22C3707000DF07F2 /* SceneDelegate.swift in Sources */,
-				1BCF484022C3707000DF07F2 /* ContentView.swift in Sources */,
+				1BCF489B22C3711500DF07F2 /* CareTicket.swift in Sources */,
+				1BCF48B522C3711500DF07F2 /* SSLSecurity.swift in Sources */,
+				1BCF48A822C3711500DF07F2 /* BirthdayRequest.swift in Sources */,
+				1BCF48AA22C3711500DF07F2 /* VeloRequest.swift in Sources */,
+				1BCF489D22C3711500DF07F2 /* BambooBirthdayResponse.swift in Sources */,
+				1BCF48B622C3711500DF07F2 /* WebSocket.swift in Sources */,
+				1BCF48AB22C3711500DF07F2 /* JenkinsBuildsRequest.swift in Sources */,
+				1BCF48A922C3711500DF07F2 /* LatestHireRequest.swift in Sources */,
+				1BCF489C22C3711500DF07F2 /* CareAgent.swift in Sources */,
+				1BCF48A722C3711500DF07F2 /* AnniversaryRequest.swift in Sources */,
+				1BCF48AD22C3711500DF07F2 /* Service.swift in Sources */,
+				1BCF48B322C3711500DF07F2 /* SSLClientCertificate.swift in Sources */,
+				1BCF48A022C3711500DF07F2 /* VeloItem.swift in Sources */,
+				1BCF48AC22C3711500DF07F2 /* EventsRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +846,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BCF48B822C371A400DF07F2 /* XCRemoteSwiftPackageReference "ios-cara" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/icapps/ios-cara";
+			requirement = {
+				kind = revision;
+				revision = e3ad251a241844531cc7c2189c4f11db048a46a3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BCF48B922C371A400DF07F2 /* Cara */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BCF48B822C371A400DF07F2 /* XCRemoteSwiftPackageReference "ios-cara" */;
+			productName = Cara;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BCF483022C3707000DF07F2 /* Project object */;
 }

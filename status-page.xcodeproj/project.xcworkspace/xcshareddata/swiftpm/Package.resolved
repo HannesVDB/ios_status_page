@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Cara",
+        "repositoryURL": "https://github.com/icapps/ios-cara",
+        "state": {
+          "branch": null,
+          "revision": "e3ad251a241844531cc7c2189c4f11db048a46a3",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
