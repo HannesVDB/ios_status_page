@@ -9,8 +9,18 @@
 import SwiftUI
 
 struct StartView : View {
+
+    @State var selectedIndex: Int = 0
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            SegmentedControl(selection: $selectedIndex) {
+                Text("Test")
+                Text("Test2")
+                }
+                .navigationBarHidden(false).padding(.leading).padding(.trailing)
+            
+        }
     }
 }
 

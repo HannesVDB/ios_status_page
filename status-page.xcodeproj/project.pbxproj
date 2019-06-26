@@ -42,6 +42,7 @@
 		1BCF48B622C3711500DF07F2 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489A22C3711500DF07F2 /* WebSocket.swift */; };
 		1BCF48BA22C371A400DF07F2 /* Cara in Frameworks */ = {isa = PBXBuildFile; productRef = 1BCF48B922C371A400DF07F2 /* Cara */; };
 		1BCF48BE22C3720700DF07F2 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF48BD22C3720700DF07F2 /* StartView.swift */; };
+		1BCF48C122C388A400DF07F2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF48C022C388A400DF07F2 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		1BCF489922C3711500DF07F2 /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
 		1BCF489A22C3711500DF07F2 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		1BCF48BD22C3720700DF07F2 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		1BCF48C022C388A400DF07F2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,9 +381,18 @@
 		1BCF48BC22C371E800DF07F2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1BCF48BF22C3889700DF07F2 /* Login */,
 				1BCF48BD22C3720700DF07F2 /* StartView.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		1BCF48BF22C3889700DF07F2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF48C022C388A400DF07F2 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,6 +550,7 @@
 				1BCF489B22C3711500DF07F2 /* CareTicket.swift in Sources */,
 				1BCF48B522C3711500DF07F2 /* SSLSecurity.swift in Sources */,
 				1BCF48A822C3711500DF07F2 /* BirthdayRequest.swift in Sources */,
+				1BCF48C122C388A400DF07F2 /* LoginView.swift in Sources */,
 				1BCF48AA22C3711500DF07F2 /* VeloRequest.swift in Sources */,
 				1BCF489D22C3711500DF07F2 /* BambooBirthdayResponse.swift in Sources */,
 				1BCF48B622C3711500DF07F2 /* WebSocket.swift in Sources */,
