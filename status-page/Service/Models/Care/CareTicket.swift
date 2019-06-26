@@ -6,7 +6,7 @@
 //  Copyright © 2019 icapps. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct CareTicket: Codable {
     public var subject: String

@@ -21,7 +21,7 @@ public struct Serve: Codable {
     public let description: String
 }
 
-public struct Status: Codable {
+public struct ServiceStatus: Codable {
     public let heroku: Serve
     public let bitbucket: Serve
     public let slack: Serve
@@ -30,7 +30,7 @@ public struct Status: Codable {
 }
 
 public struct Statuses: Codable {
-    public let statuses: Status
+    public let statuses: ServiceStatus
     
     public var allServes: [Serve] {
         return [statuses.heroku, statuses.bitbucket, statuses.slack, statuses.jenkins, statuses.network]

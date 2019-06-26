@@ -34,13 +34,14 @@
 		1BCF48AC22C3711500DF07F2 /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488B22C3711500DF07F2 /* EventsRequest.swift */; };
 		1BCF48AD22C3711500DF07F2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF488D22C3711500DF07F2 /* Service.swift */; };
 		1BCF48B022C3711500DF07F2 /* SocketConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489322C3711500DF07F2 /* SocketConfiguration.swift */; };
-		1BCF48B122C3711500DF07F2 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489422C3711500DF07F2 /* Status.swift */; };
+		1BCF48B122C3711500DF07F2 /* ServiceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489422C3711500DF07F2 /* ServiceStatus.swift */; };
 		1BCF48B222C3711500DF07F2 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489522C3711500DF07F2 /* Socket.swift */; };
 		1BCF48B322C3711500DF07F2 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489722C3711500DF07F2 /* SSLClientCertificate.swift */; };
 		1BCF48B422C3711500DF07F2 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489822C3711500DF07F2 /* Compression.swift */; };
 		1BCF48B522C3711500DF07F2 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489922C3711500DF07F2 /* SSLSecurity.swift */; };
 		1BCF48B622C3711500DF07F2 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF489A22C3711500DF07F2 /* WebSocket.swift */; };
 		1BCF48BA22C371A400DF07F2 /* Cara in Frameworks */ = {isa = PBXBuildFile; productRef = 1BCF48B922C371A400DF07F2 /* Cara */; };
+		1BCF48BE22C3720700DF07F2 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF48BD22C3720700DF07F2 /* StartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,12 +95,13 @@
 		1BCF488B22C3711500DF07F2 /* EventsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRequest.swift; sourceTree = "<group>"; };
 		1BCF488D22C3711500DF07F2 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		1BCF489322C3711500DF07F2 /* SocketConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConfiguration.swift; sourceTree = "<group>"; };
-		1BCF489422C3711500DF07F2 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		1BCF489422C3711500DF07F2 /* ServiceStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceStatus.swift; sourceTree = "<group>"; };
 		1BCF489522C3711500DF07F2 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
 		1BCF489722C3711500DF07F2 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLClientCertificate.swift; sourceTree = "<group>"; };
 		1BCF489822C3711500DF07F2 /* Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
 		1BCF489922C3711500DF07F2 /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
 		1BCF489A22C3711500DF07F2 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		1BCF48BD22C3720700DF07F2 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,11 +153,10 @@
 		1BCF483A22C3707000DF07F2 /* status-page */ = {
 			isa = PBXGroup;
 			children = (
+				1BCF48BC22C371E800DF07F2 /* Modules */,
+				1BCF48BB22C371D700DF07F2 /* Supporting Files */,
 				1BCF48B722C3715100DF07F2 /* Startup */,
 				1BCF486B22C3707D00DF07F2 /* Service */,
-				1BCF484122C3707200DF07F2 /* Assets.xcassets */,
-				1BCF484622C3707200DF07F2 /* LaunchScreen.storyboard */,
-				1BCF484922C3707200DF07F2 /* Info.plist */,
 				1BCF484322C3707200DF07F2 /* Preview Content */,
 			);
 			path = "status-page";
@@ -339,7 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				1BCF489322C3711500DF07F2 /* SocketConfiguration.swift */,
-				1BCF489422C3711500DF07F2 /* Status.swift */,
+				1BCF489422C3711500DF07F2 /* ServiceStatus.swift */,
 				1BCF489522C3711500DF07F2 /* Socket.swift */,
 			);
 			path = Socket;
@@ -363,6 +364,24 @@
 				1BCF483D22C3707000DF07F2 /* SceneDelegate.swift */,
 			);
 			path = Startup;
+			sourceTree = "<group>";
+		};
+		1BCF48BB22C371D700DF07F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF484122C3707200DF07F2 /* Assets.xcassets */,
+				1BCF484622C3707200DF07F2 /* LaunchScreen.storyboard */,
+				1BCF484922C3707200DF07F2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BCF48BC22C371E800DF07F2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1BCF48BD22C3720700DF07F2 /* StartView.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,10 +531,11 @@
 				1BCF48A522C3711500DF07F2 /* CareRequest.swift in Sources */,
 				1BCF48A322C3711500DF07F2 /* EventsResponse.swift in Sources */,
 				1BCF489F22C3711500DF07F2 /* Profile.swift in Sources */,
-				1BCF48B122C3711500DF07F2 /* Status.swift in Sources */,
+				1BCF48B122C3711500DF07F2 /* ServiceStatus.swift in Sources */,
 				1BCF483C22C3707000DF07F2 /* AppDelegate.swift in Sources */,
 				1BCF48A622C3711500DF07F2 /* StatusRequest.swift in Sources */,
 				1BCF483E22C3707000DF07F2 /* SceneDelegate.swift in Sources */,
+				1BCF48BE22C3720700DF07F2 /* StartView.swift in Sources */,
 				1BCF489B22C3711500DF07F2 /* CareTicket.swift in Sources */,
 				1BCF48B522C3711500DF07F2 /* SSLSecurity.swift in Sources */,
 				1BCF48A822C3711500DF07F2 /* BirthdayRequest.swift in Sources */,
@@ -697,7 +717,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "status-page/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "status-page/Info.plist";
+				INFOPLIST_FILE = "status-page/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,7 +736,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "status-page/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "status-page/Info.plist";
+				INFOPLIST_FILE = "status-page/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

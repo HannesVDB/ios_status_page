@@ -7,6 +7,7 @@
 //
 
 import Cara
+import UIKit
 
 struct VeloRequest: Request {
     
