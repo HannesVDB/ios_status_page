@@ -14,20 +14,29 @@ struct LoginView : View {
     @State var password: String = ""
     
     var body: some View {
-        VStack(alignment: .center, spacing: nil) {
-            Image("icapps_banner")
-                .padding(.horizontal, 100.0)
-            VStack(alignment: .leading, spacing: nil) {
-                TextField($username, placeholder: Text("Username"))
+        NavigationView {
+            VStack(alignment: .center, spacing: nil) {
+                Image("icapps_banner")
+                    .resizable()
+                    .frame(width: 250, height: 50, alignment: .center)
+                    .padding(.bottom, 100)
+                
+                VStack(alignment: .leading, spacing: nil) {
+                    TextField($username, placeholder: Text("Username"))
+                    }
+                    .padding([.leading, .trailing], 30)
+                
+                VStack(alignment: .leading, spacing: nil) {
+                    SecureField($password, placeholder: Text("Password"))
+                    }
+                    .padding([.leading, .trailing], 30)
+                    .padding(.bottom, 30)
+                
+                ActionButton(action: {
+                    print("An action button")
+                }, title: "Login")
             }
-            VStack(alignment: .leading, spacing: nil) {
-                SecureField($password, placeholder: Text("Password"))
-            }
-            Button(action: {
-                print("Tapped")
-            }) {
-                Text("Test")
-            }
+            .navigationBarTitle(Text("Login"))
         }
     }
 }
