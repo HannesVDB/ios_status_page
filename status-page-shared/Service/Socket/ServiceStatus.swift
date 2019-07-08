@@ -28,11 +28,11 @@ public struct Serve: Codable {
 }
 
 public struct ServiceStatus: Codable {
-    public let heroku: Serve
-    public let bitbucket: Serve
-    public let slack: Serve
-    public let jenkins: Serve
-    public let network: Serve
+    public var heroku: Serve?
+    public var bitbucket: Serve?
+    public var slack: Serve?
+    public var jenkins: Serve?
+    public var network: Serve?
     
     public init(heroku: Serve, bitbucket: Serve, slack: Serve, jenkins: Serve, network: Serve) {
         self.heroku = heroku
@@ -41,12 +41,14 @@ public struct ServiceStatus: Codable {
         self.jenkins = jenkins
         self.network = network
     }
+    
+    public init() { }
 }
 
 public struct Statuses: Codable {
     public let statuses: ServiceStatus
     
     public var allServes: [Serve] {
-        return [statuses.heroku, statuses.bitbucket, statuses.slack, statuses.jenkins, statuses.network]
+        return [statuses.heroku!, statuses.bitbucket!, statuses.slack!, statuses.jenkins!, statuses.network!]
     }
 }

@@ -12,17 +12,38 @@ import Combine
 public struct ServeView : View {
     
     let serve: Serve
+    
     @State private var backgroundColor = Color.icBlue
+    
     public init(serve: Serve) { self.serve = serve }
     
-    public var body: some View {
+    var iOSBody: some View {
         VStack {
-            Image("placeholder")
+            DecodeImage(base64: serve.image)
+                .frame(width: 64, height: 64)
                 .padding([.top], 16)
                 .padding([.leading, .trailing], 32)
             Text(serve.description)
                 .color(.white)
                 .padding([.leading, .trailing, .bottom], 16)
+                .lineLimit(nil)
+            }
+            .background(backgroundColor)
+            .cornerRadius(16)
+            .shadow(color: .black, radius: 32, x: 8, y: 16)
+    }
+    
+    var tvOSBody: some View {
+        #if os(tvOS)
+        return VStack {
+            DecodeImage(base64: serve.image)
+                .frame(width: 64, height: 64)
+                .padding([.top], 16)
+                .padding([.leading, .trailing], 32)
+            Text(serve.description)
+                .color(.white)
+                .padding([.leading, .trailing, .bottom], 16)
+                .lineLimit(nil)
         }
         .focusable(true) { focused in
             self.backgroundColor = focused ? Color.icSeaBlue : Color.icBlue
@@ -30,8 +51,15 @@ public struct ServeView : View {
         .background(backgroundColor)
         .cornerRadius(16)
         .shadow(color: .black, radius: 32, x: 8, y: 16)
-
-
+        #endif
+    }
+    
+    public var body: some View {
+        #if os(tvOS)
+        return tvOSBody
+        #else
+        return iOSBody
+        #endif
     }
 }
 

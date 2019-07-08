@@ -7,22 +7,32 @@
 //
 
 import SwiftUI
+import Combine
 
 public struct ServeOverview : View {
     
-    private let status: ServiceStatus
+    @EnvironmentObject var serviceStore: ServiceStore
     
-    public init(status: ServiceStatus) {
-        self.status = status
+    public init() {
+
+    }
+    
+    var serves: [Serve] {
+        let state = serviceStore.state.serviceStatusState
+        return [state.bitbucket, state.network, state.heroku, state.jenkins, state.slack].compactMap { $0 }
+    }
+    
+    func fetchServes() {
+        serviceStore.streamStatusService()
     }
     
     public var body: some View {
         HStack {
-            ServeView(serve: status.network)
-            ServeView(serve: status.bitbucket)
-            ServeView(serve: status.heroku)
-            ServeView(serve: status.jenkins)
-            ServeView(serve: status.slack)
+            ForEach(serves.identified(by: \.image)) { serve in
+                ServeView(serve: serve).frame(width: 250, height: 125)
+            }
+        }.onAppear {
+            self.fetchServes()
         }
     }
 }
@@ -30,11 +40,7 @@ public struct ServeOverview : View {
 #if DEBUG
 struct ServeOverview_Previews : PreviewProvider {
     static var previews: some View {
-        ServeOverview(status: ServiceStatus(heroku: Serve(status: .green, image: "placeholder", description: "5.16 MB/s"),
-                                            bitbucket: Serve(status: .green, image: "placeholder", description: "Howdy y'all"),
-                                            slack: Serve(status: .green, image: "placeholder", description: "Mayday!"),
-                                            jenkins: Serve(status: .green, image: "placeholder", description: "Running"),
-                                            network: Serve(status: .green, image: "placeholder", description: "5.16 MB/s")))
+        ServeOverview()
     }
 }
 #endif

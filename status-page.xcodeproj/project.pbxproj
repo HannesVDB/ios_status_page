@@ -17,14 +17,11 @@
 		1BCF48BE22C3720700DF07F2 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF48BD22C3720700DF07F2 /* StartView.swift */; };
 		1BCF48C122C388A400DF07F2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF48C022C388A400DF07F2 /* LoginView.swift */; };
 		8404B7A022D325FE00093992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404B79F22D325FE00093992 /* AppDelegate.swift */; };
-		8404B7A222D325FE00093992 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404B7A122D325FE00093992 /* ContentView.swift */; };
 		8404B7A422D3260000093992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8404B7A322D3260000093992 /* Assets.xcassets */; };
 		8404B7A722D3260000093992 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8404B7A622D3260000093992 /* Preview Assets.xcassets */; };
 		8404B7B322D326B100093992 /* status_page_shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404B7B222D326B100093992 /* status_page_shared.swift */; };
-		8404B7D322D3279800093992 /* GeneralLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404B7CF22D3279800093992 /* GeneralLabel.swift */; };
 		8404B7D422D3279800093992 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404B7D022D3279800093992 /* Palette.swift */; };
 		8404B7D522D3279800093992 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404B7D122D3279800093992 /* FontBook.swift */; };
-		8404B7D622D3279800093992 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404B7D222D3279800093992 /* ActionButton.swift */; };
 		8404B7D822D327A700093992 /* libstatus-page-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404B7B022D326B100093992 /* libstatus-page-shared.a */; };
 		8404B7DB22D327B700093992 /* libstatus-page-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404B7B022D326B100093992 /* libstatus-page-shared.a */; };
 		845BA10822D329800098E8FE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA10722D329800098E8FE /* Login.swift */; };
@@ -60,6 +57,12 @@
 		845BA16F22D32FB50098E8FE /* ServeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA16E22D32FB50098E8FE /* ServeView.swift */; };
 		845BA17122D331960098E8FE /* ServeOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA17022D331960098E8FE /* ServeOverview.swift */; };
 		845BA17322D332490098E8FE /* Cara in Frameworks */ = {isa = PBXBuildFile; productRef = 845BA17222D332490098E8FE /* Cara */; };
+		845BA17622D341DA0098E8FE /* ServiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA17522D341DA0098E8FE /* ServiceStore.swift */; };
+		845BA17822D3460C0098E8FE /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA17722D3460C0098E8FE /* ActionButton.swift */; };
+		845BA17A22D346110098E8FE /* GeneralLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA17922D346110098E8FE /* GeneralLabel.swift */; };
+		8481AC5B22D34EF20070B45B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5A22D34EF20070B45B /* SceneDelegate.swift */; };
+		8481AC5D22D364DA0070B45B /* StatusSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5C22D364DA0070B45B /* StatusSocketService.swift */; };
+		8481AC6022D365A50070B45B /* DecodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5F22D365A50070B45B /* DecodeImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,16 +125,13 @@
 		1BCF48C022C388A400DF07F2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8404B79D22D325FE00093992 /* tvos-status-page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvos-status-page.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404B79F22D325FE00093992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8404B7A122D325FE00093992 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8404B7A322D3260000093992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8404B7A622D3260000093992 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8404B7A822D3260000093992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8404B7B022D326B100093992 /* libstatus-page-shared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libstatus-page-shared.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404B7B222D326B100093992 /* status_page_shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status_page_shared.swift; sourceTree = "<group>"; };
-		8404B7CF22D3279800093992 /* GeneralLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralLabel.swift; path = ../Utils/GeneralLabel.swift; sourceTree = "<group>"; };
 		8404B7D022D3279800093992 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		8404B7D122D3279800093992 /* FontBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
-		8404B7D222D3279800093992 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionButton.swift; path = ../Utils/ActionButton.swift; sourceTree = "<group>"; };
 		845BA10722D329800098E8FE /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		845BA10922D32AD50098E8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845BA10C22D32B9F0098E8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +182,12 @@
 		845BA15122D32D830098E8FE /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		845BA16E22D32FB50098E8FE /* ServeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeView.swift; sourceTree = "<group>"; };
 		845BA17022D331960098E8FE /* ServeOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeOverview.swift; sourceTree = "<group>"; };
+		845BA17522D341DA0098E8FE /* ServiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStore.swift; sourceTree = "<group>"; };
+		845BA17722D3460C0098E8FE /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		845BA17922D346110098E8FE /* GeneralLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralLabel.swift; sourceTree = "<group>"; };
+		8481AC5A22D34EF20070B45B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8481AC5C22D364DA0070B45B /* StatusSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSocketService.swift; sourceTree = "<group>"; };
+		8481AC5F22D365A50070B45B /* DecodeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +336,7 @@
 			children = (
 				845BA10522D329700098E8FE /* Modules */,
 				8404B79F22D325FE00093992 /* AppDelegate.swift */,
-				8404B7A122D325FE00093992 /* ContentView.swift */,
+				8481AC5A22D34EF20070B45B /* SceneDelegate.swift */,
 				8404B7A322D3260000093992 /* Assets.xcassets */,
 				8404B7A822D3260000093992 /* Info.plist */,
 				8404B7A522D3260000093992 /* Preview Content */,
@@ -349,14 +355,12 @@
 		8404B7B122D326B100093992 /* status-page-shared */ = {
 			isa = PBXGroup;
 			children = (
-				845BA16C22D32F650098E8FE /* Views */,
-				845BA12622D32D500098E8FE /* Service */,
-				845BA12522D32D450098E8FE /* Buttons */,
-				845BA12422D32D3E0098E8FE /* Labels */,
-				845BA10E22D32C350098E8FE /* Fonts */,
-				8404B7CE22D3279800093992 /* Utils */,
 				8404B7B222D326B100093992 /* status_page_shared.swift */,
 				845BA10922D32AD50098E8FE /* Assets.xcassets */,
+				845BA10E22D32C350098E8FE /* Fonts */,
+				845BA12622D32D500098E8FE /* Service */,
+				8404B7CE22D3279800093992 /* Utils */,
+				845BA16C22D32F650098E8FE /* Views */,
 			);
 			path = "status-page-shared";
 			sourceTree = "<group>";
@@ -422,7 +426,7 @@
 		845BA12422D32D3E0098E8FE /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				8404B7CF22D3279800093992 /* GeneralLabel.swift */,
+				845BA17922D346110098E8FE /* GeneralLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -430,7 +434,7 @@
 		845BA12522D32D450098E8FE /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				8404B7D222D3279800093992 /* ActionButton.swift */,
+				845BA17722D3460C0098E8FE /* ActionButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -438,6 +442,7 @@
 		845BA12622D32D500098E8FE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				845BA17422D341C70098E8FE /* State */,
 				845BA13B22D32D830098E8FE /* Models */,
 				845BA12722D32D830098E8FE /* Requests */,
 				845BA14B22D32D830098E8FE /* Service */,
@@ -517,6 +522,7 @@
 				845BA13822D32D830098E8FE /* SocketConfiguration.swift */,
 				845BA13922D32D830098E8FE /* ServiceStatus.swift */,
 				845BA13A22D32D830098E8FE /* Socket.swift */,
+				8481AC5C22D364DA0070B45B /* StatusSocketService.swift */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
@@ -607,6 +613,9 @@
 		845BA16C22D32F650098E8FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8481AC5E22D365900070B45B /* Image */,
+				845BA12522D32D450098E8FE /* Buttons */,
+				845BA12422D32D3E0098E8FE /* Labels */,
 				845BA16D22D32F740098E8FE /* Serve */,
 			);
 			path = Views;
@@ -619,6 +628,22 @@
 				845BA17022D331960098E8FE /* ServeOverview.swift */,
 			);
 			path = Serve;
+			sourceTree = "<group>";
+		};
+		845BA17422D341C70098E8FE /* State */ = {
+			isa = PBXGroup;
+			children = (
+				845BA17522D341DA0098E8FE /* ServiceStore.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		8481AC5E22D365900070B45B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				8481AC5F22D365A50070B45B /* DecodeImage.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -847,8 +872,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				845BA10822D329800098E8FE /* Login.swift in Sources */,
-				8404B7A222D325FE00093992 /* ContentView.swift in Sources */,
 				8404B7A022D325FE00093992 /* AppDelegate.swift in Sources */,
+				8481AC5B22D34EF20070B45B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,6 +884,7 @@
 				8404B7D422D3279800093992 /* Palette.swift in Sources */,
 				8404B7B322D326B100093992 /* status_page_shared.swift in Sources */,
 				845BA17122D331960098E8FE /* ServeOverview.swift in Sources */,
+				8481AC6022D365A50070B45B /* DecodeImage.swift in Sources */,
 				845BA15222D32D830098E8FE /* CareAgentRequest.swift in Sources */,
 				845BA15C22D32D830098E8FE /* ServiceStatus.swift in Sources */,
 				845BA15D22D32D830098E8FE /* Socket.swift in Sources */,
@@ -867,13 +893,16 @@
 				845BA16022D32D830098E8FE /* BambooBirthdayResponse.swift in Sources */,
 				845BA15822D32D830098E8FE /* VeloRequest.swift in Sources */,
 				845BA15422D32D830098E8FE /* StatusRequest.swift in Sources */,
+				845BA17A22D346110098E8FE /* GeneralLabel.swift in Sources */,
 				845BA16F22D32FB50098E8FE /* ServeView.swift in Sources */,
-				8404B7D322D3279800093992 /* GeneralLabel.swift in Sources */,
+				845BA17622D341DA0098E8FE /* ServiceStore.swift in Sources */,
 				845BA16622D32D830098E8FE /* EventsResponse.swift in Sources */,
+				845BA17822D3460C0098E8FE /* ActionButton.swift in Sources */,
 				845BA15E22D32D830098E8FE /* CareTicket.swift in Sources */,
 				845BA16322D32D830098E8FE /* VeloItem.swift in Sources */,
 				845BA16422D32D830098E8FE /* Status.swift in Sources */,
 				845BA15A22D32D830098E8FE /* EventsRequest.swift in Sources */,
+				8481AC5D22D364DA0070B45B /* StatusSocketService.swift in Sources */,
 				845BA16A22D32D830098E8FE /* SSLSecurity.swift in Sources */,
 				845BA15522D32D830098E8FE /* AnniversaryRequest.swift in Sources */,
 				845BA15322D32D830098E8FE /* CareRequest.swift in Sources */,
@@ -888,7 +917,6 @@
 				845BA16522D32D830098E8FE /* JenkinsBuild.swift in Sources */,
 				845BA16822D32D830098E8FE /* SSLClientCertificate.swift in Sources */,
 				845BA15722D32D830098E8FE /* LatestHireRequest.swift in Sources */,
-				8404B7D622D3279800093992 /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1163,7 +1191,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "tvos-status-page/Preview\\ Content";
 				DEVELOPMENT_TEAM = FAJTRUZ6J9;
@@ -1186,7 +1214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "tvos-status-page/Preview\\ Content";
 				DEVELOPMENT_TEAM = FAJTRUZ6J9;

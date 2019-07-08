@@ -43,7 +43,7 @@ struct LoginView : View {
                 ActionButton(action: {
                     print("ACtion")
                 }, title: "Login")
-                ServeOverview(status: serviceStatus)
+                ServeOverview()
             }
             .navigationBarTitle(Text("Login"))
         }
