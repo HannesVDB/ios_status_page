@@ -16,4 +16,12 @@ public extension Color {
     static var icBlue: Color {
         return Color("icapps_blue_color")
     }
+    
+    static var icLightBlue: Color {
+        return Color("icapps_light_blue_color")
+    }
+    
+    static var icSeaBlue: Color {
+        return Color("icapps_sea_blue_color")
+    }
 }

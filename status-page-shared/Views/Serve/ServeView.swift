@@ -7,20 +7,31 @@
 //
 
 import SwiftUI
+import Combine
 
 public struct ServeView : View {
     
     let serve: Serve
-    
+    @State private var backgroundColor = Color.icBlue
     public init(serve: Serve) { self.serve = serve }
     
     public var body: some View {
         VStack {
             Image("placeholder")
-            Text(serve.description).color(.white)
+                .padding([.top], 16)
+                .padding([.leading, .trailing], 32)
+            Text(serve.description)
+                .color(.white)
+                .padding([.leading, .trailing, .bottom], 16)
         }
-        .background(Color.icBlue)
+        .focusable(true) { focused in
+            self.backgroundColor = focused ? Color.icSeaBlue : Color.icBlue
+        }
+        .background(backgroundColor)
         .cornerRadius(16)
+        .shadow(color: .black, radius: 32, x: 8, y: 16)
+
+
     }
 }
 
