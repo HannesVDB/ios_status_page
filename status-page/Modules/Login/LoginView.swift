@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import status_page_shared
 
 struct LoginView : View {
     
@@ -22,18 +23,17 @@ struct LoginView : View {
                     .padding(.bottom, 100)
                 
                 VStack(alignment: .leading, spacing: nil) {
-                    TextField($username, placeholder: Text("Username"))
+                    TextField($username, placeholder: Text("Username")).textFieldStyle(.roundedBorder)
                     }
                     .padding([.leading, .trailing], 30)
                 
                 VStack(alignment: .leading, spacing: nil) {
-                    SecureField($password, placeholder: Text("Password"))
+                    SecureField($password, placeholder: Text("Password")).textFieldStyle(.roundedBorder)
                     }
                     .padding([.leading, .trailing], 30)
                     .padding(.bottom, 30)
-                
                 ActionButton(action: {
-                    print("An action button")
+                    print("ACtion")
                 }, title: "Login")
             }
             .navigationBarTitle(Text("Login"))

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-SemiBold.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>OpenSans-LightItalic.ttf</string>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-SemiBoldItalic.ttf</string>
+		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+		<string>HKNova-RegularR.ttf</string>
+		<string>HKNova-HeavyR.ttf</string>
+		<string>HKNova-ExtraBoldR.ttf</string>
+		<string>HKNova-SemiBoldR.ttf</string>
+		<string>HKNova-LightR.ttf</string>
+		<string>HKNova-BoldR.ttf</string>
+		<string>HKNova-ExtraLightR.ttf</string>
+		<string>HKNova-ThinR.ttf</string>
+		<string>HKNova-MediumR.ttf</string>
+		<string>HKNova-SemiBold.ttf</string>
+		<string>HKNova-Light.ttf</string>
+		<string>HKNova-ExtraLight.ttf</string>
+		<string>HKNova-Heavy.ttf</string>
+		<string>HKNova-ExtraBold.ttf</string>
+		<string>HKNova-Regular.ttf</string>
+		<string>HKNova-Thin.ttf</string>
+		<string>HKNova-Medium.ttf</string>
+		<string>HKNova-Bold.ttf</string>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Automatic</string>
+</dict>
+</plist>
