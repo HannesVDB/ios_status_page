@@ -10,12 +10,22 @@ import SwiftUI
 import status_page_shared
 
 struct Login : View {
+    
+    var serviceStatus: ServiceStatus {
+        return ServiceStatus(heroku: Serve(status: .green, image: "placeholder", description: "5.16 MB/s"),
+                             bitbucket: Serve(status: .green, image: "placeholder", description: "Howdy y'all"),
+                             slack: Serve(status: .green, image: "placeholder", description: "Mayday!"),
+                             jenkins: Serve(status: .green, image: "placeholder", description: "Running"),
+                             network: Serve(status: .green, image: "placeholder", description: "5.16 MB/s"))
+    }
+    
     var body: some View {
-        HStack {
+        VStack {
             Text("This is a Label")
             ActionButton(action: {
                 print("Somethign here")
             }, title: "Login")
+            ServeOverview(status: serviceStatus)
         }
     }
 }

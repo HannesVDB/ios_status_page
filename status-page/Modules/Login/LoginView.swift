@@ -14,6 +14,14 @@ struct LoginView : View {
     @State var username: String = ""
     @State var password: String = ""
     
+    var serviceStatus: ServiceStatus {
+        return ServiceStatus(heroku: Serve(status: .green, image: "placeholder", description: "5.16 MB/s"),
+                             bitbucket: Serve(status: .green, image: "placeholder", description: "Howdy y'all"),
+                             slack: Serve(status: .green, image: "placeholder", description: "Mayday!"),
+                             jenkins: Serve(status: .green, image: "placeholder", description: "Running"),
+                             network: Serve(status: .green, image: "placeholder", description: "5.16 MB/s"))
+    }
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: nil) {
@@ -35,6 +43,7 @@ struct LoginView : View {
                 ActionButton(action: {
                     print("ACtion")
                 }, title: "Login")
+                ServeOverview(status: serviceStatus)
             }
             .navigationBarTitle(Text("Login"))
         }

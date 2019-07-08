@@ -57,6 +57,9 @@
 		845BA16922D32D830098E8FE /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA14F22D32D830098E8FE /* Compression.swift */; };
 		845BA16A22D32D830098E8FE /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA15022D32D830098E8FE /* SSLSecurity.swift */; };
 		845BA16B22D32D830098E8FE /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA15122D32D830098E8FE /* WebSocket.swift */; };
+		845BA16F22D32FB50098E8FE /* ServeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA16E22D32FB50098E8FE /* ServeView.swift */; };
+		845BA17122D331960098E8FE /* ServeOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA17022D331960098E8FE /* ServeOverview.swift */; };
+		845BA17322D332490098E8FE /* Cara in Frameworks */ = {isa = PBXBuildFile; productRef = 845BA17222D332490098E8FE /* Cara */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +180,8 @@
 		845BA14F22D32D830098E8FE /* Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
 		845BA15022D32D830098E8FE /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
 		845BA15122D32D830098E8FE /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		845BA16E22D32FB50098E8FE /* ServeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeView.swift; sourceTree = "<group>"; };
+		845BA17022D331960098E8FE /* ServeOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeOverview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845BA17322D332490098E8FE /* Cara in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +349,7 @@
 		8404B7B122D326B100093992 /* status-page-shared */ = {
 			isa = PBXGroup;
 			children = (
+				845BA16C22D32F650098E8FE /* Views */,
 				845BA12622D32D500098E8FE /* Service */,
 				845BA12522D32D450098E8FE /* Buttons */,
 				845BA12422D32D3E0098E8FE /* Labels */,
@@ -597,6 +604,23 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
+		845BA16C22D32F650098E8FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				845BA16D22D32F740098E8FE /* Serve */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		845BA16D22D32F740098E8FE /* Serve */ = {
+			isa = PBXGroup;
+			children = (
+				845BA16E22D32FB50098E8FE /* ServeView.swift */,
+				845BA17022D331960098E8FE /* ServeOverview.swift */,
+			);
+			path = Serve;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -688,6 +712,9 @@
 			dependencies = (
 			);
 			name = "status-page-shared";
+			packageProductDependencies = (
+				845BA17222D332490098E8FE /* Cara */,
+			);
 			productName = "status-page-shared";
 			productReference = 8404B7B022D326B100093992 /* libstatus-page-shared.a */;
 			productType = "com.apple.product-type.library.static";
@@ -698,6 +725,9 @@
 		1BCF483022C3707000DF07F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = icapps;
@@ -828,6 +858,7 @@
 			files = (
 				8404B7D422D3279800093992 /* Palette.swift in Sources */,
 				8404B7B322D326B100093992 /* status_page_shared.swift in Sources */,
+				845BA17122D331960098E8FE /* ServeOverview.swift in Sources */,
 				845BA15222D32D830098E8FE /* CareAgentRequest.swift in Sources */,
 				845BA15C22D32D830098E8FE /* ServiceStatus.swift in Sources */,
 				845BA15D22D32D830098E8FE /* Socket.swift in Sources */,
@@ -836,6 +867,7 @@
 				845BA16022D32D830098E8FE /* BambooBirthdayResponse.swift in Sources */,
 				845BA15822D32D830098E8FE /* VeloRequest.swift in Sources */,
 				845BA15422D32D830098E8FE /* StatusRequest.swift in Sources */,
+				845BA16F22D32FB50098E8FE /* ServeView.swift in Sources */,
 				8404B7D322D3279800093992 /* GeneralLabel.swift in Sources */,
 				845BA16622D32D830098E8FE /* EventsResponse.swift in Sources */,
 				845BA15E22D32D830098E8FE /* CareTicket.swift in Sources */,
@@ -1273,6 +1305,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		1BCF48B922C371A400DF07F2 /* Cara */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BCF48B822C371A400DF07F2 /* XCRemoteSwiftPackageReference "ios-cara" */;
+			productName = Cara;
+		};
+		845BA17222D332490098E8FE /* Cara */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1BCF48B822C371A400DF07F2 /* XCRemoteSwiftPackageReference "ios-cara" */;
 			productName = Cara;

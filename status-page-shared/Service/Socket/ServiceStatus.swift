@@ -19,6 +19,12 @@ public struct Serve: Codable {
     public let status: StatusType
     public let image: String
     public let description: String
+    
+    public init(status: StatusType, image: String, description: String) {
+        self.status = status
+        self.image = image
+        self.description = description
+    }
 }
 
 public struct ServiceStatus: Codable {
@@ -27,6 +33,14 @@ public struct ServiceStatus: Codable {
     public let slack: Serve
     public let jenkins: Serve
     public let network: Serve
+    
+    public init(heroku: Serve, bitbucket: Serve, slack: Serve, jenkins: Serve, network: Serve) {
+        self.heroku = heroku
+        self.bitbucket = bitbucket
+        self.slack = slack
+        self.jenkins = jenkins
+        self.network = network
+    }
 }
 
 public struct Statuses: Codable {
