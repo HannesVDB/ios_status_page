@@ -20,6 +20,7 @@ public final class ServiceStore: BindableObject {
     public struct ServiceState {
         public var serviceStatusState: ServiceStatus
         public var veloState: [VeloItem]?
+        public var careState: [CareTicket]?
     }
 
     // MARK: - Private
@@ -56,6 +57,14 @@ public final class ServiceStore: BindableObject {
         network.fetchVeloStations { items in
             var state = self.state
             state.veloState = items
+            self.state = state
+        }
+    }
+    
+    public func fetchCare() {
+        network.fetchCareTickets { tickets in
+            var state = self.state
+            state.careState = tickets
             self.state = state
         }
     }

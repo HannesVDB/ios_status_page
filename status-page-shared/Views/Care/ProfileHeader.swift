@@ -10,11 +10,13 @@ import SwiftUI
 
 public struct ProfileHeader : View {
     
-    public init() { }
+    private let careTicket: CareTicket
+    
+    public init(careTicket: CareTicket) { self.careTicket = careTicket }
     
     public var body: some View {
         HStack(spacing: 24) {
-            HeaderLabel(text: "Profile", size: 20)
+            HeaderLabel(text: careTicket.agent ?? "Unknown", size: 20)
             ZStack {
                 Circle()
                     .foregroundColor(Color.white)
@@ -32,7 +34,7 @@ public struct ProfileHeader : View {
 #if DEBUG
 struct ProfileHeader_Previews : PreviewProvider {
     static var previews: some View {
-        ProfileHeader()
+        ProfileHeader(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: "now", priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
     }
 }
 #endif

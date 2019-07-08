@@ -10,15 +10,17 @@ import SwiftUI
 
 public struct CareHeader : View {
     
-    public init() { }
+    private let careTicket: CareTicket
+    
+    public init(careTicket: CareTicket) { self.careTicket = careTicket }
     
     public var body: some View {
         HStack {
             HStack(spacing: 16) {
-                HeaderLabel(text: "icapps care")
+                HeaderLabel(text: "New ticket from \(careTicket.requestName)")
                 OpenSansLabel(text: "3 unresolved tickets", color: Color.gray)
             }
-            ProfileHeader().frame(alignment: .trailing)
+            ProfileHeader(careTicket: careTicket).frame(alignment: .trailing)
         }
     }
 }
@@ -26,7 +28,7 @@ public struct CareHeader : View {
 #if DEBUG
 struct CareHeader_Previews : PreviewProvider {
     static var previews: some View {
-        CareHeader()
+        CareHeader(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: "now", priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
     }
 }
 #endif

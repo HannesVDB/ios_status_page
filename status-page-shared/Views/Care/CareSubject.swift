@@ -10,21 +10,25 @@ import SwiftUI
 
 struct CareSubject : View {
     
+    private let careTicket: CareTicket
+    
+    public init(careTicket: CareTicket) { self.careTicket = careTicket }
+    
     var title: some View {
-        OpenSansLabel(text: "New ticket for BARD by Illaria Rainalid", color: Color.white, size: 20)
-            .padding([.leading, .trailing], 24)
-            .padding([.top, .bottom], 6)
-            .background(Color.icRed)
-            .cornerRadius(8)
+        OpenSansLabel(text: careTicket.subject, color: Color.white, size: 20)
     }
     
     var subject: some View {
-        OpenSansLabel(text: "Re: [External] RE: BD2GO - continuing problems #2090", color: Color.white, size: 16)
+        OpenSansLabel(text: careTicket.due, color: Color.white, size: 16)
     }
     
     var body: some View {
         VStack(spacing: 16) {
             title
+                .padding([.leading, .trailing], 12)
+                .padding([.top, .bottom], 6)
+                .background(Color.icRed)
+                .cornerRadius(8)
             subject
         }
         .padding([.leading, .trailing], 24)
@@ -35,7 +39,7 @@ struct CareSubject : View {
 #if DEBUG
 struct CareSubject_Previews : PreviewProvider {
     static var previews: some View {
-        CareSubject()
+        CareSubject(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: "now", priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
     }
 }
 #endif
