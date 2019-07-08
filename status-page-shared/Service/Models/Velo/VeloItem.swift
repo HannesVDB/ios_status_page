@@ -6,9 +6,13 @@
 //  Copyright © 2019 icapps. All rights reserved.
 //
 
-import UIKit
+import SwiftUI
 
-public struct VeloItem: Codable {
+public struct VeloItem: Codable, Identifiable {
+    
+    public var id: String? {
+        return name
+    }
     
     public var name: String
     public var bikes: Int
@@ -20,9 +24,9 @@ public struct VeloItem: Codable {
 public enum VeloStatus: String, Codable {
     case open = "OPN"
     
-    public var color: UIColor {
+    public var color: Color {
         switch self {
-        case .open: return UIColor.green
+        case .open: return Color.green
         }
     }
 }

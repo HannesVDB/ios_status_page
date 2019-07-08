@@ -24,6 +24,53 @@
 		8404B7D522D3279800093992 /* FontBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404B7D122D3279800093992 /* FontBook.swift */; };
 		8404B7D822D327A700093992 /* libstatus-page-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404B7B022D326B100093992 /* libstatus-page-shared.a */; };
 		8404B7DB22D327B700093992 /* libstatus-page-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404B7B022D326B100093992 /* libstatus-page-shared.a */; };
+		843E501622D370420053498B /* VeloIconItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E501522D370420053498B /* VeloIconItem.swift */; };
+		843E501822D371FB0053498B /* VeloOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E501722D371FB0053498B /* VeloOverview.swift */; };
+		843E501B22D37B240053498B /* CareItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E501A22D37B240053498B /* CareItem.swift */; };
+		843E501D22D37B320053498B /* CareHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E501C22D37B320053498B /* CareHeader.swift */; };
+		843E501F22D37B770053498B /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E501E22D37B770053498B /* ProfileHeader.swift */; };
+		843E502122D37D590053498B /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E502022D37D590053498B /* HeaderLabel.swift */; };
+		843E502222D37E740053498B /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA10F22D32C350098E8FE /* OpenSans-SemiBold.ttf */; };
+		843E502322D37E740053498B /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA10F22D32C350098E8FE /* OpenSans-SemiBold.ttf */; };
+		843E502422D37E770053498B /* HKNova-RegularR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11022D32C350098E8FE /* HKNova-RegularR.ttf */; };
+		843E502522D37E780053498B /* HKNova-RegularR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11022D32C350098E8FE /* HKNova-RegularR.ttf */; };
+		843E502622D37E7D0053498B /* HKNova-HeavyR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11122D32C350098E8FE /* HKNova-HeavyR.ttf */; };
+		843E502722D37E7E0053498B /* HKNova-HeavyR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11122D32C350098E8FE /* HKNova-HeavyR.ttf */; };
+		843E502822D37E810053498B /* HKNova-ExtraBoldR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11222D32C350098E8FE /* HKNova-ExtraBoldR.ttf */; };
+		843E502922D37E810053498B /* HKNova-ExtraBoldR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11222D32C350098E8FE /* HKNova-ExtraBoldR.ttf */; };
+		843E502A22D37E850053498B /* HKNova-SemiBoldR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11322D32C350098E8FE /* HKNova-SemiBoldR.ttf */; };
+		843E502B22D37E850053498B /* HKNova-SemiBoldR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11322D32C350098E8FE /* HKNova-SemiBoldR.ttf */; };
+		843E502C22D37E8A0053498B /* HKNova-LightR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11422D32C350098E8FE /* HKNova-LightR.ttf */; };
+		843E502D22D37E8A0053498B /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11522D32C350098E8FE /* OpenSans-Light.ttf */; };
+		843E502E22D37E8A0053498B /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11622D32C350098E8FE /* OpenSans-Italic.ttf */; };
+		843E502F22D37E8A0053498B /* HKNova-BoldR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11722D32C350098E8FE /* HKNova-BoldR.ttf */; };
+		843E503022D37E8A0053498B /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11822D32C350098E8FE /* OpenSans-ExtraBold.ttf */; };
+		843E503122D37E8A0053498B /* HKNova-ExtraLightR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11922D32C350098E8FE /* HKNova-ExtraLightR.ttf */; };
+		843E503222D37E8A0053498B /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11A22D32C350098E8FE /* OpenSans-LightItalic.ttf */; };
+		843E503322D37E8A0053498B /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11B22D32C350098E8FE /* OpenSans-Bold.ttf */; };
+		843E503422D37E8A0053498B /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11C22D32C350098E8FE /* OpenSans-SemiBoldItalic.ttf */; };
+		843E503522D37E8A0053498B /* HKNova-ThinR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11D22D32C350098E8FE /* HKNova-ThinR.ttf */; };
+		843E503622D37E8A0053498B /* HKNova-MediumR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11E22D32C350098E8FE /* HKNova-MediumR.ttf */; };
+		843E503722D37E8A0053498B /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11F22D32C350098E8FE /* OpenSans-ExtraBoldItalic.ttf */; };
+		843E503822D37E8A0053498B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA12022D32C350098E8FE /* OpenSans-Regular.ttf */; };
+		843E503922D37E8A0053498B /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA12122D32C350098E8FE /* OpenSans-BoldItalic.ttf */; };
+		843E503A22D37E8A0053498B /* HKNova-LightR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11422D32C350098E8FE /* HKNova-LightR.ttf */; };
+		843E503B22D37E8A0053498B /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11522D32C350098E8FE /* OpenSans-Light.ttf */; };
+		843E503C22D37E8A0053498B /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11622D32C350098E8FE /* OpenSans-Italic.ttf */; };
+		843E503D22D37E8A0053498B /* HKNova-BoldR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11722D32C350098E8FE /* HKNova-BoldR.ttf */; };
+		843E503E22D37E8A0053498B /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11822D32C350098E8FE /* OpenSans-ExtraBold.ttf */; };
+		843E503F22D37E8A0053498B /* HKNova-ExtraLightR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11922D32C350098E8FE /* HKNova-ExtraLightR.ttf */; };
+		843E504022D37E8A0053498B /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11A22D32C350098E8FE /* OpenSans-LightItalic.ttf */; };
+		843E504122D37E8A0053498B /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11B22D32C350098E8FE /* OpenSans-Bold.ttf */; };
+		843E504222D37E8A0053498B /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11C22D32C350098E8FE /* OpenSans-SemiBoldItalic.ttf */; };
+		843E504322D37E8A0053498B /* HKNova-ThinR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11D22D32C350098E8FE /* HKNova-ThinR.ttf */; };
+		843E504422D37E8A0053498B /* HKNova-MediumR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11E22D32C350098E8FE /* HKNova-MediumR.ttf */; };
+		843E504522D37E8A0053498B /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA11F22D32C350098E8FE /* OpenSans-ExtraBoldItalic.ttf */; };
+		843E504622D37E8A0053498B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA12022D32C350098E8FE /* OpenSans-Regular.ttf */; };
+		843E504722D37E8A0053498B /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845BA12122D32C350098E8FE /* OpenSans-BoldItalic.ttf */; };
+		843E504922D37ED10053498B /* OpenSansLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E504822D37ED10053498B /* OpenSansLabel.swift */; };
+		843E504B22D3883C0053498B /* CareSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E504A22D3883C0053498B /* CareSubject.swift */; };
+		843E504D22D38B840053498B /* CareItemStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E504C22D38B840053498B /* CareItemStatus.swift */; };
 		845BA10822D329800098E8FE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA10722D329800098E8FE /* Login.swift */; };
 		845BA10D22D32B9F0098E8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845BA10C22D32B9F0098E8FE /* Assets.xcassets */; };
 		845BA12222D32CDB0098E8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845BA10922D32AD50098E8FE /* Assets.xcassets */; };
@@ -63,6 +110,8 @@
 		8481AC5B22D34EF20070B45B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5A22D34EF20070B45B /* SceneDelegate.swift */; };
 		8481AC5D22D364DA0070B45B /* StatusSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5C22D364DA0070B45B /* StatusSocketService.swift */; };
 		8481AC6022D365A50070B45B /* DecodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5F22D365A50070B45B /* DecodeImage.swift */; };
+		8481AC6422D36BBC0070B45B /* Velos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC6322D36BBC0070B45B /* Velos.swift */; };
+		8481AC6622D36C670070B45B /* VeloRowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC6522D36C670070B45B /* VeloRowItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +181,15 @@
 		8404B7B222D326B100093992 /* status_page_shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status_page_shared.swift; sourceTree = "<group>"; };
 		8404B7D022D3279800093992 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		8404B7D122D3279800093992 /* FontBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontBook.swift; sourceTree = "<group>"; };
+		843E501522D370420053498B /* VeloIconItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeloIconItem.swift; sourceTree = "<group>"; };
+		843E501722D371FB0053498B /* VeloOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeloOverview.swift; sourceTree = "<group>"; };
+		843E501A22D37B240053498B /* CareItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareItem.swift; sourceTree = "<group>"; };
+		843E501C22D37B320053498B /* CareHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareHeader.swift; sourceTree = "<group>"; };
+		843E501E22D37B770053498B /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		843E502022D37D590053498B /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		843E504822D37ED10053498B /* OpenSansLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSansLabel.swift; sourceTree = "<group>"; };
+		843E504A22D3883C0053498B /* CareSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareSubject.swift; sourceTree = "<group>"; };
+		843E504C22D38B840053498B /* CareItemStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareItemStatus.swift; sourceTree = "<group>"; };
 		845BA10722D329800098E8FE /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		845BA10922D32AD50098E8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845BA10C22D32B9F0098E8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -188,6 +246,8 @@
 		8481AC5A22D34EF20070B45B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8481AC5C22D364DA0070B45B /* StatusSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSocketService.swift; sourceTree = "<group>"; };
 		8481AC5F22D365A50070B45B /* DecodeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeImage.swift; sourceTree = "<group>"; };
+		8481AC6322D36BBC0070B45B /* Velos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velos.swift; sourceTree = "<group>"; };
+		8481AC6522D36C670070B45B /* VeloRowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeloRowItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,9 +441,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		843E501922D37ABC0053498B /* Care */ = {
+			isa = PBXGroup;
+			children = (
+				843E501A22D37B240053498B /* CareItem.swift */,
+				843E501C22D37B320053498B /* CareHeader.swift */,
+				843E501E22D37B770053498B /* ProfileHeader.swift */,
+				843E504A22D3883C0053498B /* CareSubject.swift */,
+				843E504C22D38B840053498B /* CareItemStatus.swift */,
+			);
+			path = Care;
+			sourceTree = "<group>";
+		};
 		845BA10522D329700098E8FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8481AC6222D36BA30070B45B /* Velo */,
 				845BA10622D329760098E8FE /* Login */,
 			);
 			path = Modules;
@@ -427,6 +500,8 @@
 			isa = PBXGroup;
 			children = (
 				845BA17922D346110098E8FE /* GeneralLabel.swift */,
+				843E502022D37D590053498B /* HeaderLabel.swift */,
+				843E504822D37ED10053498B /* OpenSansLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -613,10 +688,12 @@
 		845BA16C22D32F650098E8FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8481AC5E22D365900070B45B /* Image */,
+				843E501922D37ABC0053498B /* Care */,
 				845BA12522D32D450098E8FE /* Buttons */,
+				8481AC5E22D365900070B45B /* Image */,
 				845BA12422D32D3E0098E8FE /* Labels */,
 				845BA16D22D32F740098E8FE /* Serve */,
+				8481AC6122D36B890070B45B /* Velo */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -644,6 +721,24 @@
 				8481AC5F22D365A50070B45B /* DecodeImage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		8481AC6122D36B890070B45B /* Velo */ = {
+			isa = PBXGroup;
+			children = (
+				8481AC6522D36C670070B45B /* VeloRowItem.swift */,
+				843E501522D370420053498B /* VeloIconItem.swift */,
+				843E501722D371FB0053498B /* VeloOverview.swift */,
+			);
+			path = Velo;
+			sourceTree = "<group>";
+		};
+		8481AC6222D36BA30070B45B /* Velo */ = {
+			isa = PBXGroup;
+			children = (
+				8481AC6322D36BBC0070B45B /* Velos.swift */,
+			);
+			path = Velo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -806,10 +901,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843E503422D37E8A0053498B /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				843E503722D37E8A0053498B /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				843E503622D37E8A0053498B /* HKNova-MediumR.ttf in Resources */,
 				845BA10D22D32B9F0098E8FE /* Assets.xcassets in Resources */,
+				843E502C22D37E8A0053498B /* HKNova-LightR.ttf in Resources */,
+				843E503522D37E8A0053498B /* HKNova-ThinR.ttf in Resources */,
 				1BCF484822C3707200DF07F2 /* LaunchScreen.storyboard in Resources */,
+				843E503322D37E8A0053498B /* OpenSans-Bold.ttf in Resources */,
+				843E502222D37E740053498B /* OpenSans-SemiBold.ttf in Resources */,
+				843E502A22D37E850053498B /* HKNova-SemiBoldR.ttf in Resources */,
 				845BA12322D32CDC0098E8FE /* Assets.xcassets in Resources */,
+				843E503222D37E8A0053498B /* OpenSans-LightItalic.ttf in Resources */,
+				843E503822D37E8A0053498B /* OpenSans-Regular.ttf in Resources */,
+				843E502922D37E810053498B /* HKNova-ExtraBoldR.ttf in Resources */,
 				1BCF484522C3707200DF07F2 /* Preview Assets.xcassets in Resources */,
+				843E502722D37E7E0053498B /* HKNova-HeavyR.ttf in Resources */,
+				843E503922D37E8A0053498B /* OpenSans-BoldItalic.ttf in Resources */,
+				843E503022D37E8A0053498B /* OpenSans-ExtraBold.ttf in Resources */,
+				843E502E22D37E8A0053498B /* OpenSans-Italic.ttf in Resources */,
+				843E502D22D37E8A0053498B /* OpenSans-Light.ttf in Resources */,
+				843E502422D37E770053498B /* HKNova-RegularR.ttf in Resources */,
+				843E502F22D37E8A0053498B /* HKNova-BoldR.ttf in Resources */,
+				843E503122D37E8A0053498B /* HKNova-ExtraLightR.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,9 +945,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843E502322D37E740053498B /* OpenSans-SemiBold.ttf in Resources */,
+				843E503C22D37E8A0053498B /* OpenSans-Italic.ttf in Resources */,
+				843E504122D37E8A0053498B /* OpenSans-Bold.ttf in Resources */,
+				843E504322D37E8A0053498B /* HKNova-ThinR.ttf in Resources */,
+				843E502522D37E780053498B /* HKNova-RegularR.ttf in Resources */,
 				8404B7A722D3260000093992 /* Preview Assets.xcassets in Resources */,
 				845BA12222D32CDB0098E8FE /* Assets.xcassets in Resources */,
+				843E504522D37E8A0053498B /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				843E502622D37E7D0053498B /* HKNova-HeavyR.ttf in Resources */,
+				843E503F22D37E8A0053498B /* HKNova-ExtraLightR.ttf in Resources */,
+				843E504622D37E8A0053498B /* OpenSans-Regular.ttf in Resources */,
+				843E502B22D37E850053498B /* HKNova-SemiBoldR.ttf in Resources */,
 				8404B7A422D3260000093992 /* Assets.xcassets in Resources */,
+				843E502822D37E810053498B /* HKNova-ExtraBoldR.ttf in Resources */,
+				843E504722D37E8A0053498B /* OpenSans-BoldItalic.ttf in Resources */,
+				843E503B22D37E8A0053498B /* OpenSans-Light.ttf in Resources */,
+				843E504222D37E8A0053498B /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				843E503A22D37E8A0053498B /* HKNova-LightR.ttf in Resources */,
+				843E504422D37E8A0053498B /* HKNova-MediumR.ttf in Resources */,
+				843E503D22D37E8A0053498B /* HKNova-BoldR.ttf in Resources */,
+				843E503E22D37E8A0053498B /* OpenSans-ExtraBold.ttf in Resources */,
+				843E504022D37E8A0053498B /* OpenSans-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,6 +1007,7 @@
 				845BA10822D329800098E8FE /* Login.swift in Sources */,
 				8404B7A022D325FE00093992 /* AppDelegate.swift in Sources */,
 				8481AC5B22D34EF20070B45B /* SceneDelegate.swift in Sources */,
+				8481AC6422D36BBC0070B45B /* Velos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,37 +1018,47 @@
 				8404B7D422D3279800093992 /* Palette.swift in Sources */,
 				8404B7B322D326B100093992 /* status_page_shared.swift in Sources */,
 				845BA17122D331960098E8FE /* ServeOverview.swift in Sources */,
+				843E501822D371FB0053498B /* VeloOverview.swift in Sources */,
+				843E501622D370420053498B /* VeloIconItem.swift in Sources */,
 				8481AC6022D365A50070B45B /* DecodeImage.swift in Sources */,
 				845BA15222D32D830098E8FE /* CareAgentRequest.swift in Sources */,
 				845BA15C22D32D830098E8FE /* ServiceStatus.swift in Sources */,
 				845BA15D22D32D830098E8FE /* Socket.swift in Sources */,
 				845BA16722D32D830098E8FE /* Service.swift in Sources */,
 				845BA16922D32D830098E8FE /* Compression.swift in Sources */,
+				843E501B22D37B240053498B /* CareItem.swift in Sources */,
 				845BA16022D32D830098E8FE /* BambooBirthdayResponse.swift in Sources */,
 				845BA15822D32D830098E8FE /* VeloRequest.swift in Sources */,
+				843E501F22D37B770053498B /* ProfileHeader.swift in Sources */,
 				845BA15422D32D830098E8FE /* StatusRequest.swift in Sources */,
 				845BA17A22D346110098E8FE /* GeneralLabel.swift in Sources */,
 				845BA16F22D32FB50098E8FE /* ServeView.swift in Sources */,
 				845BA17622D341DA0098E8FE /* ServiceStore.swift in Sources */,
 				845BA16622D32D830098E8FE /* EventsResponse.swift in Sources */,
 				845BA17822D3460C0098E8FE /* ActionButton.swift in Sources */,
+				8481AC6622D36C670070B45B /* VeloRowItem.swift in Sources */,
+				843E504D22D38B840053498B /* CareItemStatus.swift in Sources */,
 				845BA15E22D32D830098E8FE /* CareTicket.swift in Sources */,
 				845BA16322D32D830098E8FE /* VeloItem.swift in Sources */,
 				845BA16422D32D830098E8FE /* Status.swift in Sources */,
 				845BA15A22D32D830098E8FE /* EventsRequest.swift in Sources */,
 				8481AC5D22D364DA0070B45B /* StatusSocketService.swift in Sources */,
 				845BA16A22D32D830098E8FE /* SSLSecurity.swift in Sources */,
+				843E504B22D3883C0053498B /* CareSubject.swift in Sources */,
 				845BA15522D32D830098E8FE /* AnniversaryRequest.swift in Sources */,
 				845BA15322D32D830098E8FE /* CareRequest.swift in Sources */,
+				843E502122D37D590053498B /* HeaderLabel.swift in Sources */,
 				845BA15F22D32D830098E8FE /* CareAgent.swift in Sources */,
 				845BA16122D32D830098E8FE /* BambooResponse.swift in Sources */,
 				845BA16B22D32D830098E8FE /* WebSocket.swift in Sources */,
+				843E501D22D37B320053498B /* CareHeader.swift in Sources */,
 				845BA15922D32D830098E8FE /* JenkinsBuildsRequest.swift in Sources */,
 				8404B7D522D3279800093992 /* FontBook.swift in Sources */,
 				845BA15622D32D830098E8FE /* BirthdayRequest.swift in Sources */,
 				845BA15B22D32D830098E8FE /* SocketConfiguration.swift in Sources */,
 				845BA16222D32D830098E8FE /* Profile.swift in Sources */,
 				845BA16522D32D830098E8FE /* JenkinsBuild.swift in Sources */,
+				843E504922D37ED10053498B /* OpenSansLabel.swift in Sources */,
 				845BA16822D32D830098E8FE /* SSLClientCertificate.swift in Sources */,
 				845BA15722D32D830098E8FE /* LatestHireRequest.swift in Sources */,
 			);

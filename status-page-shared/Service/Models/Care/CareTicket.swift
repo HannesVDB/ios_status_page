@@ -6,7 +6,7 @@
 //  Copyright © 2019 icapps. All rights reserved.
 //
 
-import UIKit
+import SwiftUI
 
 public struct CareTicket: Codable {
     public var subject: String
@@ -24,11 +24,11 @@ public enum CarePriority: String, Codable {
     case medium = "Medium"
     case high = "High"
     
-    public var color: UIColor {
+    public var color: Color {
         switch self {
-        case .low: return UIColor.yellow
-        case .medium: return UIColor.orange
-        case .high: return UIColor.red
+        case .low: return Color.icGreen
+        case .medium: return Color.icOrange
+        case .high: return Color.icRed
         }
     }
 }

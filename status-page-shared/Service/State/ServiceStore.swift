@@ -13,17 +13,32 @@ public let serviceStore = ServiceStore()
 
 public final class ServiceStore: BindableObject {
 
+    // MARK: - Public
+    
     public var didChange = PassthroughSubject<ServiceStore, Never>()
     
     public struct ServiceState {
         public var serviceStatusState: ServiceStatus
+        public var veloState: [VeloItem]?
     }
 
+    // MARK: - Private
+    
     private(set) var state = ServiceState(serviceStatusState: ServiceStatus()) {
         didSet {
             didChange.send(self)
         }
     }
+    
+    let network: Network
+    
+    // MARK: - Init
+    
+    init(network: Network = Network.shared) {
+        self.network = network
+    }
+    
+    // MARK: - Methods
     
     public func streamStatusService() {
         let socket = StatusSocketService()
@@ -35,5 +50,13 @@ public final class ServiceStore: BindableObject {
             self.state = state
         }
         socket.reloadData()
+    }
+    
+    public func fetchVelos() {
+        network.fetchVeloStations { items in
+            var state = self.state
+            state.veloState = items
+            self.state = state
+        }
     }
 }

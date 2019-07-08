@@ -19,6 +19,12 @@ struct Login : View {
                 print("Somethign here")
             }, title: "Login")
             ServeOverview()
+            Divider()
+            HStack {
+                Velos()
+                CareItem()
+            }
+            
         }
     }
 }
