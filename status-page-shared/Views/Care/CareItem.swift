@@ -29,19 +29,21 @@ public struct CareItem : View {
     public init() { }
     
     public var body: some View {
-        ZStack {
+        HStack(alignment: .top) {
             if ticket != nil {
                 VStack(alignment: .leading) {
                     CareHeader(careTicket: ticket!, amountOpenTickets: tickets.count).padding([.leading, .trailing, .top], 24)
                     Divider()
                     CareSubject(careTicket: ticket!)
                     CareItemStatus(careTicket: ticket!)
-                    }
-                    .background(Color.icBlue)
-                    .cornerRadius(16)
-                    .shadow(color: .black, radius: 32, x: 8, y: 16)
+                    Spacer()
+                }
             }
         }
+        .background(Color.icBlue)
+        .frame(height: 400)
+        .cornerRadius(16)
+        .shadow(color: .black, radius: 32, x: 8, y: 16)
         .onAppear {
             self.fetchCare()
         }

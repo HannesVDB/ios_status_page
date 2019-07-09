@@ -24,6 +24,7 @@ public struct CareHeader : View {
                 HeaderLabel(text: "New ticket from \(careTicket.requestName)")
                 OpenSansLabel(text: "\(amountOpenTickets) unresolved tickets", color: Color.gray)
             }
+            Spacer()
             ProfileHeader(careTicket: careTicket).frame(alignment: .trailing)
         }
     }

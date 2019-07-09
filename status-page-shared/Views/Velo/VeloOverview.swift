@@ -24,9 +24,16 @@ public struct VeloOverview : View {
     public init() { }
 
     public var body: some View {
-        List(veloItems) { velo in
-            VeloRowItem(veloItem: velo)
+        VStack(alignment: .leading) {
+            HeaderLabel(text: "Available bikes", color: .white, size: 32).padding([.leading, .trailing, .top], 12)
+            List(veloItems) { velo in
+                VeloRowItem(veloItem: velo)
+            }
         }
+        .frame(width: 600, height: 400)
+        .background(Color.icBlue)
+        .cornerRadius(16)
+        .shadow(color: .black, radius: 32, x: 8, y: 16)
         .onAppear {
             self.fetchVelos()
         }

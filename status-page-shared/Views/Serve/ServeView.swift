@@ -23,10 +23,8 @@ public struct ServeView : View {
                 .frame(width: 64, height: 64)
                 .padding([.top], 16)
                 .padding([.leading, .trailing], 32)
-            Text(serve.description)
-                .color(.white)
+            GeneralLabel(text: serve.description, size: 16, color: .white)
                 .padding([.leading, .trailing, .bottom], 16)
-                .lineLimit(nil)
             }
             .background(backgroundColor)
             .cornerRadius(16)
@@ -40,10 +38,8 @@ public struct ServeView : View {
                 .frame(width: 64, height: 64)
                 .padding([.top], 16)
                 .padding([.leading, .trailing], 32)
-            Text(serve.description)
-                .color(.white)
+            GeneralLabel(text: serve.description, size: 16, color: .white)
                 .padding([.leading, .trailing, .bottom], 16)
-                .lineLimit(nil)
         }
         .focusable(true) { focused in
             self.backgroundColor = focused ? Color.icSeaBlue : Color.icBlue

@@ -11,13 +11,14 @@ import SwiftUI
 public struct GeneralLabel: View {
     
     public var text: String
+    public var size: Length? = 16
     public var color: Color? = Color.gray
     
     public var body: some View {
         Text(text)
             .color(color)
             .lineLimit(nil)
-            .font(Font.HKNovaR(size: 16))
+            .font(Font.HKNovaR(size: size!))
             .multilineTextAlignment(.leading)
     }
 }

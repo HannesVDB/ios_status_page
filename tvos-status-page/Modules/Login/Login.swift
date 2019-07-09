@@ -13,18 +13,14 @@ struct Login : View {
     @EnvironmentObject var serviceStore: ServiceStore
     
     var body: some View {
-        VStack {
-            Text("This is a Label")
-            ActionButton(action: {
-                print("Somethign here")
-            }, title: "Login")
+        VStack(alignment: .leading, spacing: 12) {
             ServeOverview()
-            Divider()
+                .frame(height: 125, alignment: .topLeading)
+            Spacer()
             HStack {
-                Velos()
-                CareItem().frame(maxWidth: 800, maxHeight: 900)
+                CareItem()
+                VeloOverview()
             }
-            
         }
     }
 }

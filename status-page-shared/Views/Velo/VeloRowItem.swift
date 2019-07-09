@@ -27,7 +27,7 @@ public struct VeloRowItem : View {
             }
             VeloIconItem(icon: "velo_icon", description: "\(veloItem.bikes)")
             VeloIconItem(icon: "lock_icon", description: "\(veloItem.slots)")
-        }
+        }.background(Color.orange)
     }
 }
 

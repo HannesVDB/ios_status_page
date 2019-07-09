@@ -29,7 +29,7 @@ public struct ServeOverview : View {
     public var body: some View {
         HStack {
             ForEach(serves.identified(by: \.image)) { serve in
-                ServeView(serve: serve).frame(width: 250, height: 125)
+                ServeView(serve: serve).frame(maxWidth: 125)
             }
         }.onAppear {
             self.fetchServes()
