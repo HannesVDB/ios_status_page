@@ -21,10 +21,14 @@ struct CareItemStatus : View {
             .cornerRadius(8)
     }
     
+    var subject: some View {
+        OpenSansLabel(text: "Task due date: \(DateFormatter.shortDateString(from: careTicket.due))", color: Color.white, size: 16)
+    }
+    
     var body: some View {
         HStack(spacing: 16) {
             status
-            OpenSansLabel(text: "\(careTicket.due)", color: .white, size: 16)
+            subject
         }.padding(24)
     }
 }

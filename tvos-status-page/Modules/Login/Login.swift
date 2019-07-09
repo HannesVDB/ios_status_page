@@ -22,7 +22,7 @@ struct Login : View {
             Divider()
             HStack {
                 Velos()
-                CareItem().frame(maxWidth: 800)
+                CareItem().frame(maxWidth: 800, maxHeight: 900)
             }
             
         }

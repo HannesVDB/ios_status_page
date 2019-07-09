@@ -18,18 +18,13 @@ struct CareSubject : View {
         OpenSansLabel(text: careTicket.subject, color: Color.white, size: 20)
     }
     
-    var subject: some View {
-        OpenSansLabel(text: "Task due date: \(DateFormatter.shortDateString(from: careTicket.due))", color: Color.white, size: 16)
-    }
-    
     var body: some View {
-        VStack(spacing: 16) {
+        VStack {
             title
                 .padding([.leading, .trailing], 12)
                 .padding([.top, .bottom], 6)
                 .background(Color.icRed)
                 .cornerRadius(8)
-            subject
         }
         .padding([.leading, .trailing], 24)
 

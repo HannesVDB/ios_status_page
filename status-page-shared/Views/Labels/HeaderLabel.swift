@@ -18,7 +18,6 @@ public struct HeaderLabel : View {
             .color(color)
             .lineLimit(nil)
             .font(Font.HKNovaBoldR(size: size))
-            .multilineTextAlignment(.leading)
     }
 }
 
