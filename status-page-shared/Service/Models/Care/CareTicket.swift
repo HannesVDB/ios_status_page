@@ -13,7 +13,7 @@ public struct CareTicket: Codable {
     public var replied: Bool
     public var overtime: Bool
     public var agent: String?
-    public var due: String
+    public var due: Date
     public var priority: CarePriority
     public var status: CareStatus
     public var requestName: String

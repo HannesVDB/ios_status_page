@@ -63,6 +63,7 @@ public final class ServiceStore: BindableObject {
     
     public func fetchCare() {
         network.fetchCareTickets { tickets in
+            print("⭐️ Fetched care tickets \(tickets)")
             var state = self.state
             state.careState = tickets
             self.state = state

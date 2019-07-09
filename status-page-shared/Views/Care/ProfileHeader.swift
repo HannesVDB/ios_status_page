@@ -34,7 +34,7 @@ public struct ProfileHeader : View {
 #if DEBUG
 struct ProfileHeader_Previews : PreviewProvider {
     static var previews: some View {
-        ProfileHeader(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: "now", priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
+        ProfileHeader(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: Date(), priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
     }
 }
 #endif

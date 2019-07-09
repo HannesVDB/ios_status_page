@@ -16,8 +16,9 @@ public struct GeneralLabel: View {
     public var body: some View {
         Text(text)
             .color(color)
-            .font(Font.HKNovaR(size: 16))
             .lineLimit(nil)
+            .font(Font.HKNovaR(size: 16))
+            .multilineTextAlignment(.leading)
     }
 }
 

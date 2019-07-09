@@ -7,18 +7,23 @@
 //
 
 import SwiftUI
+import Combine
 
 public struct CareItem : View {
     
     @EnvironmentObject var serviceStore: ServiceStore
-
+    
     private func fetchCare() {
         serviceStore.fetchCare()
     }
     
     private var ticket: CareTicket? {
-        let state = serviceStore.state.careState
-        return state?.first
+        return tickets.first
+    }
+    
+    private var tickets: [CareTicket] {
+         let state = serviceStore.state.careState
+        return state ?? []
     }
     
     public init() { }
@@ -27,7 +32,7 @@ public struct CareItem : View {
         ZStack {
             if ticket != nil {
                 VStack(alignment: .leading) {
-                    CareHeader(careTicket: ticket!).padding([.leading, .trailing, .top], 24)
+                    CareHeader(careTicket: ticket!, amountOpenTickets: tickets.count).padding([.leading, .trailing, .top], 24)
                     Divider()
                     CareSubject(careTicket: ticket!)
                     CareItemStatus(careTicket: ticket!)

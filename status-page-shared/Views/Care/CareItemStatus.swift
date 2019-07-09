@@ -24,7 +24,7 @@ struct CareItemStatus : View {
     var body: some View {
         HStack(spacing: 16) {
             status
-            OpenSansLabel(text: careTicket.due, color: .white, size: 16)
+            OpenSansLabel(text: "\(careTicket.due)", color: .white, size: 16)
         }.padding(24)
     }
 }
@@ -32,7 +32,7 @@ struct CareItemStatus : View {
 #if DEBUG
 struct CareItemStatus_Previews : PreviewProvider {
     static var previews: some View {
-        CareItemStatus(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: "now", priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
+        CareItemStatus(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: Date(), priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
     }
 }
 #endif

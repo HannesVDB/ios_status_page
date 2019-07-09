@@ -107,6 +107,8 @@
 		845BA17622D341DA0098E8FE /* ServiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA17522D341DA0098E8FE /* ServiceStore.swift */; };
 		845BA17822D3460C0098E8FE /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA17722D3460C0098E8FE /* ActionButton.swift */; };
 		845BA17A22D346110098E8FE /* GeneralLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA17922D346110098E8FE /* GeneralLabel.swift */; };
+		8470A97A22D4AB1B0043467D /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470A97922D4AB1B0043467D /* CustomDateFormatter.swift */; };
+		8470A97C22D4B0D00043467D /* StrategySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470A97B22D4B0D00043467D /* StrategySerializer.swift */; };
 		8481AC5B22D34EF20070B45B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5A22D34EF20070B45B /* SceneDelegate.swift */; };
 		8481AC5D22D364DA0070B45B /* StatusSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5C22D364DA0070B45B /* StatusSocketService.swift */; };
 		8481AC6022D365A50070B45B /* DecodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481AC5F22D365A50070B45B /* DecodeImage.swift */; };
@@ -243,6 +245,8 @@
 		845BA17522D341DA0098E8FE /* ServiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStore.swift; sourceTree = "<group>"; };
 		845BA17722D3460C0098E8FE /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		845BA17922D346110098E8FE /* GeneralLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralLabel.swift; sourceTree = "<group>"; };
+		8470A97922D4AB1B0043467D /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
+		8470A97B22D4B0D00043467D /* StrategySerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategySerializer.swift; sourceTree = "<group>"; };
 		8481AC5A22D34EF20070B45B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8481AC5C22D364DA0070B45B /* StatusSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSocketService.swift; sourceTree = "<group>"; };
 		8481AC5F22D365A50070B45B /* DecodeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeImage.swift; sourceTree = "<group>"; };
@@ -430,6 +434,7 @@
 			children = (
 				8404B7D022D3279800093992 /* Palette.swift */,
 				8404B7D122D3279800093992 /* FontBook.swift */,
+				8470A97922D4AB1B0043467D /* CustomDateFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -670,6 +675,7 @@
 			isa = PBXGroup;
 			children = (
 				845BA14C22D32D830098E8FE /* Service.swift */,
+				8470A97B22D4B0D00043467D /* StrategySerializer.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1026,6 +1032,7 @@
 				845BA15D22D32D830098E8FE /* Socket.swift in Sources */,
 				845BA16722D32D830098E8FE /* Service.swift in Sources */,
 				845BA16922D32D830098E8FE /* Compression.swift in Sources */,
+				8470A97A22D4AB1B0043467D /* CustomDateFormatter.swift in Sources */,
 				843E501B22D37B240053498B /* CareItem.swift in Sources */,
 				845BA16022D32D830098E8FE /* BambooBirthdayResponse.swift in Sources */,
 				845BA15822D32D830098E8FE /* VeloRequest.swift in Sources */,
@@ -1046,6 +1053,7 @@
 				845BA16A22D32D830098E8FE /* SSLSecurity.swift in Sources */,
 				843E504B22D3883C0053498B /* CareSubject.swift in Sources */,
 				845BA15522D32D830098E8FE /* AnniversaryRequest.swift in Sources */,
+				8470A97C22D4B0D00043467D /* StrategySerializer.swift in Sources */,
 				845BA15322D32D830098E8FE /* CareRequest.swift in Sources */,
 				843E502122D37D590053498B /* HeaderLabel.swift in Sources */,
 				845BA15F22D32D830098E8FE /* CareAgent.swift in Sources */,

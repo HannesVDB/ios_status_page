@@ -73,7 +73,7 @@ public class Network {
     
     public func fetchCareTickets(completion: @escaping ((_ response: [CareTicket]?) -> Void)) {
         let request = CareRequest()
-        let serializer = CodableSerializer<[CareTicket]>()
+        let serializer = StrategySerializer<[CareTicket]>(decoder: JSONDecoder.strategyDecoder)
         
         execute(request: request, serializer: serializer, completion: { response in
             switch response {
@@ -101,4 +101,10 @@ public class Network {
         })
     }
     
+}
+
+
+
+public enum GeneralErrors: Error {
+    case generalError
 }

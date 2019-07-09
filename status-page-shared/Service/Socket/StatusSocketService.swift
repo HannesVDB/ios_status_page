@@ -23,7 +23,6 @@ public final class StatusSocketService {
     
     func reloadData() {
         socket.onUpdate = { statuses in
-            print("Something here")
             self.statusses = statuses
             self.updateUIHandler?()
         }

@@ -19,7 +19,7 @@ struct CareSubject : View {
     }
     
     var subject: some View {
-        OpenSansLabel(text: careTicket.due, color: Color.white, size: 16)
+        OpenSansLabel(text: "Task due date: \(DateFormatter.shortDateString(from: careTicket.due))", color: Color.white, size: 16)
     }
     
     var body: some View {
@@ -39,7 +39,7 @@ struct CareSubject : View {
 #if DEBUG
 struct CareSubject_Previews : PreviewProvider {
     static var previews: some View {
-        CareSubject(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: "now", priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
+        CareSubject(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: Date(), priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
     }
 }
 #endif

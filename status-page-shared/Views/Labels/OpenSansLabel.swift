@@ -16,8 +16,9 @@ public struct OpenSansLabel : View {
     public var body: some View {
         Text(text)
             .color(color)
-            .font(Font.OpenSansR(size: size))
             .lineLimit(nil)
+            .font(Font.OpenSansR(size: size))
+            .multilineTextAlignment(.leading)
     }
 }
 

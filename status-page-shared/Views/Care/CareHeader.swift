@@ -11,14 +11,18 @@ import SwiftUI
 public struct CareHeader : View {
     
     private let careTicket: CareTicket
+    private let amountOpenTickets: Int
     
-    public init(careTicket: CareTicket) { self.careTicket = careTicket }
+    public init(careTicket: CareTicket, amountOpenTickets: Int) {
+        self.careTicket = careTicket
+        self.amountOpenTickets = amountOpenTickets
+    }
     
     public var body: some View {
         HStack {
             HStack(spacing: 16) {
                 HeaderLabel(text: "New ticket from \(careTicket.requestName)")
-                OpenSansLabel(text: "3 unresolved tickets", color: Color.gray)
+                OpenSansLabel(text: "\(amountOpenTickets) unresolved tickets", color: Color.gray)
             }
             ProfileHeader(careTicket: careTicket).frame(alignment: .trailing)
         }
@@ -28,7 +32,7 @@ public struct CareHeader : View {
 #if DEBUG
 struct CareHeader_Previews : PreviewProvider {
     static var previews: some View {
-        CareHeader(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: "now", priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"))
+        CareHeader(careTicket: CareTicket(subject: "A subject", replied: false, overtime: true, agent: "Agent", due: Date(), priority: CarePriority.high, status: CareStatus.open, requestName: "Somebody"), amountOpenTickets: 3)
     }
 }
 #endif
