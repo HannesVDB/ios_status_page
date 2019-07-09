@@ -16,6 +16,9 @@ struct Login : View {
         VStack(alignment: .leading, spacing: 12) {
             ServeOverview()
                 .frame(height: 125, alignment: .topLeading)
+            HStack {
+                EventsOverview()
+            }
             Spacer()
             HStack {
                 CareItem()

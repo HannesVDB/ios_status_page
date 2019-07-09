@@ -21,6 +21,7 @@ public final class ServiceStore: BindableObject {
         public var serviceStatusState: ServiceStatus
         public var veloState: [VeloItem]?
         public var careState: [CareTicket]?
+        public var eventsState: [Event]?
     }
 
     // MARK: - Private
@@ -63,9 +64,17 @@ public final class ServiceStore: BindableObject {
     
     public func fetchCare() {
         network.fetchCareTickets { tickets in
-            print("⭐️ Fetched care tickets \(tickets)")
             var state = self.state
             state.careState = tickets
+            self.state = state
+        }
+    }
+    
+    public func fetchEvents() {
+        network.fetchEvents { events in
+            print("😀 Events \(events ?? [])")
+            var state = self.state
+            state.eventsState = events
             self.state = state
         }
     }
